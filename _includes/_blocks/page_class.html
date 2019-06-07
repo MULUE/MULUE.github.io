@@ -1,0 +1,69 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@MULUE 
+0
+0 495 Leerw/Leerw.github.io
+forked from Simpleyyt/jekyll-theme-next
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Security  Insights
+You’re editing a file in a project you don’t have write access to. Submitting a change to this file will write it to a new branch in your fork MULUE/Leerw.github.io, so you can send a pull request.
+Leerw.github.io
+/
+_includes
+/
+_blocks
+/
+page_class.html
+ 
+
+1
+{% case page.layout %}
+2
+{% when 'index' %}
+3
+  {% capture page_class %}page-home{% endcapture %}
+4
+{% when 'post' %}
+5
+  {% capture page_class %}page-post-detail{% endcapture %}
+6
+{% when 'page' %}
+7
+  {% capture page_class %}page-post-detail{% endcapture %}
+8
+{% when 'archive' %}
+9
+  {% capture page_class %}page-archive{% endcapture %}
+10
+{% when 'schedule' %}
+11
+  {% capture page_class %}page-post-detail page-calendar{% endcapture %}
+12
+{% endcase %}
+13
+​
+@MULUE
+Propose file change
+Commit summary 
+Update page_class.html
+Optional extended description
+Add an optional extended description…
+ 
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
