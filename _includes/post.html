@@ -1,0 +1,26 @@
+<div id="posts" class="posts-expand">
+  {% assign post = page %} {% include _macro/post.html %}
+  <div class="post-spread">
+    {% if site.jiathis %} {% include _partials/share/jiathis.html %} {% elsif site.baidushare %} {% include _partials/share/baidushare.html
+    %} {% elsif site.add_this_id %} {% include _partials/share/add-this.html %} {% elsif site.duoshuo_shortname and site.duoshuo_share
+    %} {% include _partials/share/duoshuo_share.html %} {% endif %}
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zMTU2Mi84MTI2">
+      <script type="text/javascript">
+        (function (d, s) {
+          var j, e = d.getElementsByTagName(s)[0];
+
+          if (typeof LivereTower === 'function') { return; }
+
+          j = d.createElement(s);
+          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+          j.async = true;
+
+          e.parentNode.insertBefore(j, e);
+        })(document, 'script');
+      </script>
+      <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
+  </div>
+</div>
