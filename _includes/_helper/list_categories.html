@@ -1,0 +1,73 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@MULUE 
+0
+0 495 Leerw/Leerw.github.io
+forked from Simpleyyt/jekyll-theme-next
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Security  Insights
+You’re editing a file in a project you don’t have write access to. Submitting a change to this file will write it to a new branch in your fork MULUE/Leerw.github.io, so you can send a pull request.
+Leerw.github.io
+/
+_includes
+/
+_helper
+/
+list_categories.html
+ 
+
+1
+{% comment %} list_categories(paginator, prev_text, next_text) {% endcomment %}
+2
+{% capture list_categories %}
+3
+  <ul class="category-list">
+4
+    {% for cat_posts in site.categories %}
+5
+    <li class="category-list-item">
+6
+      {% assign cat = cat_posts[0] %}
+7
+      {% assign posts = cat_posts[1] %}
+8
+      {% assign cat_url_encode = cat | url_encode | replace: '+', '%20' %}
+9
+      <a class="category-list-link" href="{{ '/category/#/' | relative_url | append: cat_url_encode }}">{{ cat }}</a>
+10
+      <span class="category-list-count">{{ posts.size }}</span>
+11
+    </i>
+12
+    {% endfor %}
+13
+  </ul>
+14
+{% endcapture %}
+15
+​
+@MULUE
+Propose file change
+Commit summary 
+Update list_categories.html
+Optional extended description
+Add an optional extended description…
+ 
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
